@@ -1,5 +1,6 @@
 html {
     font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 
@@ -193,10 +194,14 @@ nav .lines-yel a:hover::before
 {
     color: white;
 }
-.sec1-content p,#sec2 .tex,#sec4 .tex
+.sec1-content p,#sec2 .tex,#sec4 .tex,.sec1-content h3
 {
     color: #9DAEA8;
     margin: 25px 0;
+}
+.sec1-content h3
+{
+    margin-bottom: 50px;
 }
 #sec5 p 
 {
@@ -412,7 +417,8 @@ footer i:hover
 }
 #terms 
 {
-    margin-top: 40px;
+    /* margin-top: 80px; */
+    padding-top: 80px;
 }
 #privacy p, #terms p 
 {
@@ -430,6 +436,10 @@ footer i:hover
 {
     margin-bottom: 16px;
 }
+#sec6 .item
+    {
+        min-height: 32vh;
+    }
 @media (max-width:1024px)
 {
     .pattrn{
@@ -474,5 +484,17 @@ footer i:hover
     #sec4 img 
     {
         margin: 20px 0 !important;
+    }
+    #sec6 .item img {
+        width: 40%;
+    }
+    #sec6 .item
+    {
+        min-height: 55vh;
+    }
+    #sec7 h2 
+    {
+        font-size: 20px;
+        margin-bottom: 25px;
     }
 }
