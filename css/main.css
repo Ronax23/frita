@@ -60,6 +60,10 @@ nav {
 {
     bottom: -80px;
 }
+.laster section:nth-child(2)
+{
+    text-align: right;
+}
 .name
 {
     color: white !important;
@@ -71,10 +75,6 @@ nav {
     transition-duration: 1s;
 
 }
-nav 
-{
-    /* margin: 0 auto; */
-}
 nav .lines-yel a 
 {
     overflow: hidden;
@@ -84,7 +84,6 @@ nav .lines-yel a
 nav .lines-yel a::before
 {
     content: "";
-    /* text-align: center; */
     width: 100%;
     position: absolute;
     left: -500px;
@@ -194,7 +193,7 @@ nav .lines-yel a:hover::before
 {
     color: white;
 }
-.sec1-content p,#sec2 .tex,#sec4 .tex,.sec1-content h3
+.sec1-content p,#sec2 .tex,#sec4 .tex,.sec1-content h3,#sec5 p 
 {
     color: #9DAEA8;
     margin: 25px 0;
@@ -202,10 +201,6 @@ nav .lines-yel a:hover::before
 .sec1-content h3
 {
     margin-bottom: 50px;
-}
-#sec5 p 
-{
-    color: #9DAEA8;
 }
 #sec5 a 
 {
@@ -220,17 +215,6 @@ nav .lines-yel a:hover::before
     position: relative;
 
 }
-/* .sof::after
-{
-    position: absolute;
-    background-image: url("../images/dots-green.svg");
-    content: "";
-    top: 25px;
-    right: -60px;
-    width: 200px;
-    height: 216px;
-    z-index: -1;
-} */
 .pattrn
 {
     position: absolute;
@@ -460,7 +444,7 @@ footer i:hover
         margin-top: 130px;
     }
 }
-@media (max-width:426px)
+@media (max-width:450px)
 {
     .pattrn {
         display: none;
@@ -496,5 +480,13 @@ footer i:hover
     {
         font-size: 20px;
         margin-bottom: 25px;
+    }
+    .laster,.laster section:nth-child(2)
+    {
+        text-align: center;
+    }
+    #contact 
+    {
+        margin-top: 80px;
     }
 }
