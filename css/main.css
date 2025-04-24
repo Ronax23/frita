@@ -326,6 +326,15 @@ nav .lines-yel a:hover::before
     top: 17px;
     left: 20px;
     z-index: -1;
+    clip-path: polygon(48% 51%, 83% 12%, 100% 43%, 48% 50%, 68% 100%, 32% 100%, 47% 50%, 0% 43%, 17% 12%);
+    animation: rotatefan 1s infinite linear;
+} 
+@keyframes rotatefan
+{
+    to 
+    {
+        transform: rotate(360deg);
+    }
 }
 .blank h6,#sec5 h6
 {
@@ -424,6 +433,15 @@ footer i:hover
     {
         min-height: 32vh;
     }
+    footer 
+    {
+
+        background: linear-gradient(to right, #fefffe, #9aa09d);;
+        padding-top: 50px;
+        padding-bottom: 20px;
+
+    }
+
 @media (max-width:1024px)
 {
     .pattrn{
