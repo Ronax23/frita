@@ -2,12 +2,46 @@ html {
     font-size: 20px;
     font-family: Helvetica, Arial, sans-serif;
 }
+.sec1-content
+
+{
+    padding: 0;
+    position: relative;
+}
+.toping
+{
+    position: absolute;
+    top: 300px;
+    left: 80px;
+}
+.my-file
+{
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+.my-file .item
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+}
+.my-file .item:nth-child(4)
+{
+    background-image: url("../images/1.jpg");
+}
+.my-file .item:nth-child(3)
+{
+    background-image: url("../images/2.jpg");
+}
+.my-file .item:nth-child(2)
+{
+    background-image: url("../images/3.jpg");
+}
 
 
-#sec5,
-#sec4,
-#sec3,
-#sec2,#sec8,#sec7 {
+[id^="sec"]:not(#sec1){
     padding: 100px 0;
 }
 
@@ -29,14 +63,17 @@ html {
 }
 
 #sec1,nav {
-    background-color: #3B5D50 !important;
-    z-index: 0;
+    background-color: transparent !important;
+    /* z-index: 0; */
+    font-weight: 700;
     border: none !important;
 }
 
 nav {
     text-transform: capitalize;
     padding: 20px 0;
+    position: absolute !important;
+    /* top: 10px !important; */
 
 }
 .cards,.blank,.amy
@@ -71,7 +108,7 @@ nav {
 }
 .navbar-nav li a:hover
 {
-    color: white !important;
+    color: rgb(229, 204, 204) !important;
     transition-duration: 1s;
 
 }
@@ -80,6 +117,7 @@ nav .lines-yel a
     overflow: hidden;
     position: relative;
     font-size: .8rem;
+    color: white !important;
 }
 nav .lines-yel a::before
 {
@@ -94,7 +132,7 @@ nav .lines-yel a::before
 nav .lines-yel a:hover::before
 {
     left: 0px;    
-    color: white;
+    /* color: rgb(199, 26, 26) !important; */
 }
 #sec2 .amy:hover .ariana
 {
@@ -136,9 +174,9 @@ nav .lines-yel a:hover::before
     opacity: 1;
     height: 80%;
 }
-#sec1 .sec1-content {
+/* #sec1 .sec1-content {
     padding-top: 70px;
-}
+} */
 
 #sec1 .sec1-content h1 {
     font-size: 3rem;
@@ -193,10 +231,15 @@ nav .lines-yel a:hover::before
 {
     color: white;
 }
-.sec1-content p,#sec2 .tex,#sec4 .tex,.sec1-content h3,#sec5 p 
+#sec2 .tex,#sec4 .tex,.sec1-content h3,#sec5 p 
 {
     color: #9DAEA8;
     margin: 25px 0;
+}
+.sec1-content p
+{
+    color: whitesmoke;
+    font-size: 1.1rem;
 }
 .sec1-content h3
 {
@@ -327,7 +370,8 @@ nav .lines-yel a:hover::before
     left: 20px;
     z-index: -1;
     clip-path: polygon(48% 51%, 83% 12%, 100% 43%, 48% 50%, 68% 100%, 32% 100%, 47% 50%, 0% 43%, 17% 12%);
-    animation: rotatefan 1s infinite linear;
+    /* clip-path: circle(50% at 50% 50%); */
+    animation: rotatefan 2s infinite linear;
 } 
 @keyframes rotatefan
 {
@@ -436,11 +480,18 @@ footer i:hover
     footer 
     {
 
-        background: linear-gradient(to right, #fefffe, #9aa09d);;
+        background: linear-gradient(120deg, #F7F7F7, #C9C4B5);
         padding-top: 50px;
         padding-bottom: 20px;
-
+        color: #555555;
+        /* #FFAAFA */
     }
+    footer * {
+        color: #555555 !important;
+      }
+      footer i:hover {
+        color: white!important;
+      }
 
 @media (max-width:1024px)
 {
@@ -506,5 +557,12 @@ footer i:hover
     #contact 
     {
         margin-top: 80px;
+    }
+    [id^="sec"]:not(#sec1){
+        padding: 50px 0;
+    }
+    .toping {
+        top: 242px;
+        left: 46px;
     }
 }
