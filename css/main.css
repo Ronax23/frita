@@ -13,6 +13,7 @@ html {
     position: absolute;
     top: 300px;
     left: 80px;
+    /* padding-bottom: 100px; */
 }
 .my-file
 {
@@ -78,7 +79,7 @@ nav {
 }
 .cards,.blank,.amy
 {
-    margin: 20px 0;
+    margin: 30px 0;
 
 }
 #sec3 .blank 
@@ -243,6 +244,7 @@ nav .lines-yel a:hover::before
 }
 .sec1-content h3
 {
+    color: whitesmoke;
     margin-bottom: 50px;
 }
 #sec5 a 
@@ -467,11 +469,14 @@ footer i:hover
 }
 #contact 
 {
-    margin: 20px auto;
+    padding: 30px 0;
+    margin: 0 auto;
+    background-color: #DAD7CE;
 }
 #contact .form-control
 {
-    margin-bottom: 16px;
+    margin: 16px 0;
+
 }
 #sec6 .item
     {
@@ -543,7 +548,7 @@ footer i:hover
     }
     #sec6 .item
     {
-        min-height: 60vh;
+        min-height: 560px;
     }
     #sec7 h2 
     {
@@ -554,15 +559,15 @@ footer i:hover
     {
         text-align: center;
     }
-    #contact 
-    {
-        margin-top: 80px;
-    }
     [id^="sec"]:not(#sec1){
         padding: 50px 0;
     }
+    #sec1 .sec1-content h1
+    {
+        font-size: 2rem;
+    }
     .toping {
-        top: 242px;
+        top: 150px;
         left: 46px;
     }
 }
