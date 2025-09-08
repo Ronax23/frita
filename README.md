@@ -1,4 +1,4 @@
-# 🪑 FRITA – Furniture Brand Landing Page
+# 🪑 FRITA – Furniture WebPage
 
 **FRITA** is a modern, responsive landing page for a furniture brand, built using **Bootstrap 3.4**, **HTML5**, **CSS3**, and **JavaScript**. The site showcases stylish home furnishings with smooth design elements, visual layering, and basic form validation.
 
