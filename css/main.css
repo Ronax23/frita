@@ -3,6 +3,14 @@ html {
     font-family: Helvetica, Arial, sans-serif;
     cursor: url("../images/Wooden\ Texture--cursor--SweezyCursors.png") ,pointer;
 }
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb
+{
+    background: rgba(171, 72, 72, 0.589);
+    border-radius: 100px;
+}
 .sec1-content
 
 {
